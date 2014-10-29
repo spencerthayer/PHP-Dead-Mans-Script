@@ -46,10 +46,10 @@ The folder structure is / recipient e-mail address / sending after day / message
 The sending after day is the number of days after the sendAfter value in `globals.php`.
 
 ```
-A file called `data/scrow@sdf.org/0/message` will be sent to scrow@sdf.org on the `sendAfter` date.
+A file called `data/crow@mst3k.tv/0/message` will be sent to crow@mst3k.tv on the `sendAfter` date.
 ```
 ```
-A file called `data/scrow@sdf.org/7/message` will be sent to scrow@sdf.org 7 days after the `sendAfter` date.
+A file called `data/mike@mst3k.tv/7/message` will be sent to mike@mst3k.tv 7 days after the `sendAfter` date.
 ```
 
 Each folder can contain an unlimited number of plain text message files.  The file name will be used as the e-mail subject line, _ for spaces.
