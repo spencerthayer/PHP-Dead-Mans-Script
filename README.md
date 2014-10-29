@@ -1,5 +1,7 @@
 # Simple Dead Man's Script
 
+Based on a Dead Man's Script from some guy on the Interent. I found it a long time ago.
+
 ## Requirements
 
 Requires PHP with an Apache server capable of using cron jobs and email. No special databases are required.
