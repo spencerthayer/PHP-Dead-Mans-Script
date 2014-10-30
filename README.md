@@ -18,9 +18,12 @@ Requires PHP with an Apache server capable of using cron jobs and email. No spec
 
 ## Installation
 
-Unzip the distribution archive to a folder on an Apache web server and run the `initialize.sh`.
+Unzip the distribution archive to a folder on an Apache web server and run the `initialize.sh`. Ensure the `data/` subdirectory exists with the appropriate 755 permissions.
 
-Ensure the `data/` subdirectory exists with the appropriate 755 permissions.
+Or paste this in your SSH session:
+```sh
+echo 0 > daynum.dat;echo 0 > token.dat;chmod +w daynum.dat;chmod +w token.dat;[ -d data ] || mkdir data;echo order deny,allow > data/.htaccess;echo deny from all >> data/.htaccess;
+```
 
 
 ## Configuration
