@@ -2,16 +2,16 @@
 
 class globals {
 
-	const baseFolder    = '$HOME/www/sdms';
-	const dataFile      = '$HOME/www/sdms/daynum.dat';
-	const footerFile    = '$HOME/www/sdms/footer.txt';
-	const tokenFile     = '$HOME/www/sdms/token.dat';
-	const checkInterval = 2;
-	const sendAfter     = 3;
-	const webPath       = 'http://DOMAIN/sdms';
-	const ownerMail     = 'user@DOMAIN';
-	const mailFrom      = 'user@DOMAIN';
-	const subjectPrefix = 'NOT A JOKE: I might be dead.';
+	const baseFolder    = '/home/spencerthayer/www/spencerthayer.com/sdms';
+	const dataFile      = '/home/spencerthayer/www/spencerthayer.com/sdms/daynum.dat';
+	const footerFile    = '/home/spencerthayer/www/spencerthayer.com/sdms/footer.txt';
+	const tokenFile     = '/home/spencerthayer/www/spencerthayer.com/sdms/token.dat';
+	const checkInterval = 1;
+	const sendAfter     = 1;
+	const webPath       = 'http://spencerthayer.com/sdms';
+	const ownerMail     = 'me@spencerthayer.com';
+	const mailFrom      = 'me@spencerthayer.com';
+	const subjectPrefix = '';
 }
 
 ?>
