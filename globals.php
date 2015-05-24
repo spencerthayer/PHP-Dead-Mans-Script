@@ -2,6 +2,7 @@
 
 class globals {
 
+    /* EXAMPLE DATA - USE YOUR OWN */
 	const baseFolder    = '/home/spencerthayer/www/spencerthayer.com/dms';
 	const dataFile      = '/home/spencerthayer/www/spencerthayer.com/dms/daynum.dat';
 	const footerFile    = '/home/spencerthayer/www/spencerthayer.com/dms/footer.txt';
@@ -12,6 +13,7 @@ class globals {
 	const ownerMail     = 'me@spencerthayer.com';
 	const mailFrom      = 'me@spencerthayer.com';
 	const subjectPrefix = 'DMS';
+    
 }
 
 ?>
