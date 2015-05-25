@@ -3,10 +3,12 @@
 require_once('globals.php');
 
 function sendMsg($toAddress,$msgFile) {
-        $msgText = file_get_contents($msgFile);
+        $msgText = file_get_contents($msgFile)."\r\n\r\n";
+        $msgText = $msgText."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="."\r\n\r\n";
         if (file_exists(globals::footerFile)) {
-                $msgText = $msgText.file_get_contents(globals::footerFile);
+                $msgText = $msgText.file_get_contents(globals::footerFile)."\r\n\r\n";
         };
+        $msgText = $msgText.globals::webPath.'/checkin.php?token='.getToken()."\r\n\r\n";
         $subject = globals::subjectPrefix.basename($msgFile);
         $fromAddress = 'From: '.globals::mailFrom;
         mail($toAddress,$subject,$msgText,$fromAddress);

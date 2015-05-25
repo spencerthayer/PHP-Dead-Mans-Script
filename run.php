@@ -8,13 +8,13 @@ $dayNum = getDay();
 if(($dayNum % globals::checkInterval) == 0) {
 	if($dayNum < globals::sendAfter) {
         $subjectText = 'DMS Check-In Day '.getDay().', Token: '.getToken();
-		$msgText='It\'s time to check in with DMS.'."\r\n\r\n";
-	        $msgText=$msgText.'Currently on day number '.getDay().' since last check-in.'."\r\n\r\n";
-	        $msgText=$msgText.'Messages are configured to release after '.globals::sendAfter.' days.'."\r\n\r\n";
+		$msgText = 'It\'s time to check in with DMS.'."\r\n\r\n";
+	        $msgText = $msgText.'Currently on day number '.getDay().' since last check-in.'."\r\n\r\n";
+	        $msgText = $msgText.'Messages are configured to release after '.globals::sendAfter.' days.'."\r\n\r\n";
 		if((globals::sendAfter - $dayNum) <= globals::checkInterval) {
-			$msgText=$msgText.' ** WARNING:  THIS IS YOUR FINAL NOTIFICATION! ** '."\r\n\r\n";
+			$msgText = $msgText.' ** WARNING:  THIS IS YOUR FINAL NOTIFICATION! ** '."\r\n\r\n";
 		};
-	        $msgText=$msgText.globals::webPath.'/checkin.php?token='.getToken();
+	        $msgText = $msgText.globals::webPath.'/checkin.php?token='.getToken();
 		mail(globals::ownerMail,$subjectText,$msgText,'From: '.globals::mailFrom);
 	};
 	writeDay($dayNum);

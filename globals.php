@@ -12,7 +12,7 @@ class globals {
 	const webPath       = 'http://spencerthayer.com/dms';
 	const ownerMail     = 'me@spencerthayer.com';
 	const mailFrom      = 'me@spencerthayer.com';
-	const subjectPrefix = 'DMS';
+	const subjectPrefix = '';
     
 }
 
