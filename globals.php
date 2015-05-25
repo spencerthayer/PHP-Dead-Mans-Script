@@ -8,7 +8,7 @@ class globals {
 	const footerFile    = '/home/spencerthayer/www/spencerthayer.com/dms/footer.txt';
 	const tokenFile     = '/home/spencerthayer/www/spencerthayer.com/dms/token.dat';
 	const checkInterval = 1;
-	const sendAfter     = 3;
+	const sendAfter     = 4;
 	const webPath       = 'http://spencerthayer.com/dms';
 	const ownerMail     = 'me@spencerthayer.com';
 	const mailFrom      = 'me@spencerthayer.com';
