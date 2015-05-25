@@ -57,7 +57,9 @@ A file called `data/crow@mst3k.tv/0/message` will be sent to crow@mst3k.tv on th
 A file called `data/mike@mst3k.tv/7/message` will be sent to mike@mst3k.tv 7 days after the `sendAfter` date.
 ```
 
-Each folder can contain an unlimited number of plain text message files.  The file name will be used as the e-mail subject line, _ for spaces.
+Each folder can contain an unlimited number of plain text message files.  The file name will be used as the e-mail subject line. It is not necessary to include a .txt extension.
+
+Numbered folders should be entirely numeric without no special characters, no letters. Leading zeroes are okay. The DMS looks at the base 10 integer value equivalent of the folder name.
 
 ## CronJob Script
 
