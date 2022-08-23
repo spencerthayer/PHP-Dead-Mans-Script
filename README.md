@@ -1,6 +1,6 @@
 # Simple Dead Man's Script
 
-Based on a Dead Man's Script from some guy on the Interent. I found it a long time ago.
+Based on existing Dead Man's Scripts long lost.
 
 ## Requirements
 
